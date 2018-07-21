@@ -342,7 +342,7 @@ public class RevCommit extends RevObject {
 	 * @return number of parents; always a positive value but can be 0.
 	 */
 	public final int getParentCount() {
-		return parents.length;
+		return parents == null ? 0 : parents.length;
 	}
 
 	/**
